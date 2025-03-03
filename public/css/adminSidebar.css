@@ -1,0 +1,48 @@
+ /* Base styles for navigation links */
+ .nav-link {
+    position: relative;
+    display: block;
+    padding: 0.55rem 4rem;
+    border-radius: 0.395rem;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #4a5568;
+    transform: translateX(10px); /* Move slightly to the right on hover */
+}
+
+/* Active state */
+.nav-link.active {
+    background-color: #2d3748;
+    font-weight: bold;
+    color: #fff;
+    transform: translateX(5px); /* Keep the active link slightly shifted */
+}
+
+/* Add an underline animation for active links */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #67b145; /* Highlight color */
+    animation: slide-in 0.5s ease-in-out forwards;
+}
+
+/* Animation for the underline */
+@keyframes slide-in {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+

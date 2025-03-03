@@ -1,0 +1,6 @@
+// ...existing code...
+<a href="{{ route('admin.pdfNews') }}?t={{ time() }}" 
+    class="ml-5 px-2 py-1 bg-red-500 text-white font-semibold rounded-md shadow-md hover:bg-red-700 transition duration-300 flex items-center">
+    Print as PDF
+</a>
+// ...existing code...

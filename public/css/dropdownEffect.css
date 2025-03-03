@@ -1,0 +1,21 @@
+    /* Dropdown menu transition */
+    #media-menu {
+        overflow: hidden;
+        max-height: 0; /* Start with collapsed height */
+        opacity: 0; /* Start with invisible state */
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+    
+    #media-menu.max-h-40 {
+        max-height: 10rem; /* Expand to show content */
+        opacity: 1; /* Fully visible */
+    }
+    
+    /* Chevron icon rotation */
+    #chevron-icon {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #chevron-icon.rotate-180 {
+        transform: rotate(180deg);
+    }
